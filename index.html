@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pharmacy Notes — IT2</title>
+<link rel="stylesheet" href="shared.css">
+<style>
+body { background: var(--bg-main); }
+.index-wrapper { max-width: 960px; margin: 0 auto; padding: 48px 24px 80px; }
+.index-hero { text-align:center; margin-bottom:52px; }
+.index-hero h1 { font-size:2.2rem; font-weight:800; letter-spacing:-0.03em; color:var(--text-primary); margin-bottom:8px; }
+.index-hero p { color:var(--text-muted); font-size:15px; max-width:520px; margin:0 auto; }
+.category-label { font-size:11px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:var(--text-muted); margin-bottom:14px; padding-left:4px; }
+.conditions-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:16px; margin-bottom:40px; }
+.condition-card { display:block; text-decoration:none; background:var(--bg-card); border:1px solid var(--border); border-radius:14px; padding:24px; transition:all 0.18s ease; position:relative; overflow:hidden; }
+.condition-card:hover { transform:translateY(-3px); box-shadow:0 8px 28px rgba(0,0,0,0.10); border-color:var(--accent-light); }
+.condition-card::before { content:''; position:absolute; top:0; left:0; right:0; height:3px; background:var(--accent-color, #6366f1); border-radius:14px 14px 0 0; }
+.card-icon { font-size:2rem; margin-bottom:12px; display:block; }
+.card-title { font-size:16px; font-weight:700; color:var(--text-primary); margin-bottom:6px; }
+.card-subtitle { font-size:12.5px; color:var(--text-muted); line-height:1.5; }
+.card-tags { display:flex; flex-wrap:wrap; gap:5px; margin-top:12px; }
+.card-tag { font-size:10.5px; font-weight:600; padding:2px 8px; border-radius:20px; background:var(--bg-section); color:var(--text-muted); }
+.quick-ref { background:var(--bg-card); border:1px solid var(--border); border-radius:14px; padding:28px; margin-top:8px; }
+.quick-ref h3 { font-size:14px; font-weight:700; margin-bottom:16px; color:var(--text-primary); }
+.qr-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(200px,1fr)); gap:10px; }
+.qr-item { background:var(--bg-section); border-radius:8px; padding:12px; }
+.qr-item strong { display:block; font-size:12px; color:var(--text-primary); margin-bottom:4px; }
+.qr-item span { font-size:11.5px; color:var(--text-muted); }
+</style>
+</head>
+<body>
+<div class="index-wrapper">
+
+  <div class="index-hero">
+    <div style="font-size:3rem;margin-bottom:16px;">💊</div>
+    <h1>Pharmacy Notes — IT2</h1>
+    <p>Comprehensive pharmacology study notes. Colour-coded treatment ladders, drug summaries, clinical decision logic, and monitoring requirements for 9 conditions.</p>
+  </div>
+
+  <div class="category-label">Musculoskeletal &amp; Bone</div>
+  <div class="conditions-grid" style="margin-bottom:28px;">
+    <a class="condition-card" href="01_osteoarthritis.html" style="--accent-color:#e97316;">
+      <span class="card-icon">🦴</span>
+      <div class="card-title">Osteoarthritis</div>
+      <div class="card-subtitle">Non-inflammatory joint degeneration. Paracetamol → topical NSAIDs → oral NSAIDs → opioids → intra-articular injection → surgical referral.</div>
+      <div class="card-tags"><span class="card-tag">Analgesia</span><span class="card-tag">NSAIDs</span><span class="card-tag">Opioids</span><span class="card-tag">IA Injections</span></div>
+    </a>
+    <a class="condition-card" href="02_gout.html" style="--accent-color:#dc2626;">
+      <span class="card-icon">🔴</span>
+      <div class="card-title">Gout</div>
+      <div class="card-subtitle">MSU crystal deposition. Acute: NSAIDs/colchicine/CS. Chronic urate-lowering: allopurinol titrated to target SUA &lt;0.36 mmol/L.</div>
+      <div class="card-tags"><span class="card-tag">Colchicine</span><span class="card-tag">Allopurinol</span><span class="card-tag">Febuxostat</span><span class="card-tag">Probenecid</span></div>
+    </a>
+    <a class="condition-card" href="03_rheumatoid_arthritis.html" style="--accent-color:#7c3aed;">
+      <span class="card-icon">🤝</span>
+      <div class="card-title">Rheumatoid Arthritis</div>
+      <div class="card-subtitle">Systemic autoimmune synovitis. Treat-to-target with DMARDs. MTX first-line → +add csDMARD or escalate to bDMARD/tsDMARD.</div>
+      <div class="card-tags"><span class="card-tag">Methotrexate</span><span class="card-tag">HCQ</span><span class="card-tag">bDMARDs</span><span class="card-tag">JAK inhibitors</span></div>
+    </a>
+    <a class="condition-card" href="04_osteoporosis.html" style="--accent-color:#0e7490;">
+      <span class="card-icon">🦷</span>
+      <div class="card-title">Osteoporosis</div>
+      <div class="card-subtitle">Low BMD → fragility fracture. Bisphosphonates first-line. Denosumab alternative. Anabolics (teriparatide, romosozumab) for severe disease.</div>
+      <div class="card-tags"><span class="card-tag">Bisphosphonates</span><span class="card-tag">Denosumab</span><span class="card-tag">Teriparatide</span><span class="card-tag">DXA</span></div>
+    </a>
+    <a class="condition-card" href="05_paget_disease.html" style="--accent-color:#7c3aed;">
+      <span class="card-icon">📈</span>
+      <div class="card-title">Paget Disease of Bone</div>
+      <div class="card-subtitle">Focal high bone turnover. Zoledronic acid IV (single dose) → gold standard. Monitor with ALP. Not all patients need treatment.</div>
+      <div class="card-tags"><span class="card-tag">Zoledronic Acid</span><span class="card-tag">ALP Monitoring</span><span class="card-tag">Bisphosphonates</span></div>
+    </a>
+  </div>
+
+  <div class="category-label">Inflammatory Bowel Disease</div>
+  <div class="conditions-grid" style="margin-bottom:28px;">
+    <a class="condition-card" href="06_crohns_disease.html" style="--accent-color:#059669;">
+      <span class="card-icon">🟢</span>
+      <div class="card-title">Crohn Disease</div>
+      <div class="card-subtitle">Transmural IBD any segment. Induction with CS/budesonide. Maintenance: thiopurines → MTX → biologics. Never use CS for maintenance.</div>
+      <div class="card-tags"><span class="card-tag">Budesonide</span><span class="card-tag">Thiopurines</span><span class="card-tag">Infliximab</span><span class="card-tag">Ustekinumab</span></div>
+    </a>
+    <a class="condition-card" href="07_ulcerative_colitis.html" style="--accent-color:#dc2626;">
+      <span class="card-icon">🔴</span>
+      <div class="card-title">Ulcerative Colitis</div>
+      <div class="card-subtitle">Mucosal inflammation from rectum proximally. 5-ASA backbone. ASUC: IV CS → salvage infliximab/ciclosporin → colectomy.</div>
+      <div class="card-tags"><span class="card-tag">Mesalazine</span><span class="card-tag">5-ASA</span><span class="card-tag">ASUC</span><span class="card-tag">Ciclosporin</span></div>
+    </a>
+  </div>
+
+  <div class="category-label">Renal &amp; Dermatology</div>
+  <div class="conditions-grid" style="margin-bottom:40px;">
+    <a class="condition-card" href="08_renal_disorders.html" style="--accent-color:#1d4ed8;">
+      <span class="card-icon">🫘</span>
+      <div class="card-title">Renal Disorders</div>
+      <div class="card-subtitle">AKI staging &amp; management, CKD staging, renal bone disease, RRT modalities, post-transplant pharmacology, high-risk prescribing.</div>
+      <div class="card-tags"><span class="card-tag">AKI</span><span class="card-tag">CKD</span><span class="card-tag">Hyperkalaemia</span><span class="card-tag">Transplant</span></div>
+    </a>
+    <a class="condition-card" href="09_psoriasis.html" style="--accent-color:#9333ea;">
+      <span class="card-icon">🩹</span>
+      <div class="card-title">Psoriasis</div>
+      <div class="card-subtitle">T-cell mediated keratinocyte hyperproliferation. Site-specific topical ladders. Systemic: MTX → acitretin → apremilast → biologics (IL-17, IL-23, TNFα).</div>
+      <div class="card-tags"><span class="card-tag">Topical CS</span><span class="card-tag">Calcipotriol</span><span class="card-tag">Methotrexate</span><span class="card-tag">Biologics</span></div>
+    </a>
+  </div>
+
+  <div class="quick-ref">
+    <h3>📌 Key Clinical Rules — Quick Reference</h3>
+    <div class="qr-grid">
+      <div class="qr-item"><strong>Triple Whammy</strong><span>NSAID + ACEi/ARB + Diuretic → ↑ AKI risk — avoid combination</span></div>
+      <div class="qr-item"><strong>Denosumab — Never Stop Abruptly</strong><span>Must transition to bisphosphonate immediately to prevent rebound fractures</span></div>
+      <div class="qr-item"><strong>CS Never for Maintenance (IBD)</strong><span>Corticosteroids are for induction only — not relapse prevention</span></div>
+      <div class="qr-item"><strong>MTX — Once Weekly Only</strong><span>Daily dosing is potentially fatal. Always prescribe with folic acid on a different day.</span></div>
+      <div class="qr-item"><strong>Thiopurine — TPMT First</strong><span>Check TPMT/NUDT15 genotype before azathioprine or mercaptopurine to prevent myelosuppression</span></div>
+      <div class="qr-item"><strong>Bisphosphonate Dosing (Oral)</strong><span>Empty stomach, full glass water, remain upright 30 min — or oesophageal toxicity</span></div>
+      <div class="qr-item"><strong>Acitretin Teratogenicity</strong><span>No pregnancy for 3 years after stopping. No alcohol during/2 months after.</span></div>
+      <div class="qr-item"><strong>Zoledronic Acid (Pre-check)</strong><span>Check eGFR &gt;35, Ca normal, 25-OHD &gt;50, hydration before EVERY dose</span></div>
+      <div class="qr-item"><strong>Hyperkalaemia Order</strong><span>Ca gluconate (membrane) → insulin+glucose/salbutamol (shift) → resonium/dialysis (remove)</span></div>
+      <div class="qr-item"><strong>ASUC Definition</strong><span>≥6 bloody stools/day + ≥1 of: fever, tachycardia, Hb &lt;105, ESR &gt;30 → admit</span></div>
+      <div class="qr-item"><strong>Gout SUA Target</strong><span>&lt;0.36 mmol/L (&lt;0.30 mmol/L if tophaceous). Start ULT after 2+ attacks.</span></div>
+      <div class="qr-item"><strong>IL-17 Inhibitors &amp; IBD</strong><span>Secukinumab/ixekizumab — caution/avoid in Crohn or UC comorbidity</span></div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
