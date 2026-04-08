@@ -20,6 +20,7 @@
     <a href="#diagnosis">🔍 Diagnosis</a>
     <a href="#goals">🎯 Treatment Goals</a>
     <a href="#mild-mod">💊 Mild-Moderate Induction</a>
+    <a href="#mild-mod">💊 Mild-Moderate Induction</a>
     <a href="#severe">🚨 Severe Induction</a>
     <a href="#maintenance">🔄 Maintenance Therapy</a>
     <a href="#special-crohn">🔖 Special Situations</a>
@@ -134,6 +135,22 @@
     • Stool cultures — exclude infectious causes before starting immunosuppressive therapy
     </div>
   </section>
+  <!-- TREATMENT GOALS -->
+  <section class="section section-goals" id="goals">
+    <div class="section-header"><div class="section-icon">🎯</div><h2 class="section-title">Treatment Goals</h2></div>
+    <div class="rf-grid" style="grid-template-columns:repeat(auto-fit,minmax(220px,1fr))">
+      <div class="rf-card"><div class="rf-card-title">Primary</div><ul class="rf-list"><li>Induce clinical remission in active disease</li><li>Maintain corticosteroid-free remission</li><li>Achieve mucosal healing (endoscopic remission)</li></ul></div>
+      <div class="rf-card"><div class="rf-card-title">Long-term</div><ul class="rf-list"><li>Prevent relapse</li><li>Prevent hospitalisation and surgery</li><li>Maintain nutritional status</li><li>Manage extra-intestinal manifestations</li></ul></div>
+    </div>
+    <div class="callout callout-warning" style="margin-top:12px;"><span class="callout-icon">⚠️</span><div><strong>Corticosteroids are for induction ONLY — never for maintenance.</strong> Mucosal healing is important (associated with ↓ hospitalisation, ↓ surgery need).</div></div>
+    <div class="callout callout-danger" style="margin-top:8px;margin-bottom:8px;"><span class="callout-icon">📋</span><div><strong>Before starting treatment, consider:</strong><ul style="margin-top:6px;padding-left:16px;">
+      <li>Active or latent infection — TB, Hepatitis B, HIV</li>
+      <li>Immunisation requirements — especially live vaccines before starting biologics; Hepatitis B vaccination if at risk</li>
+      <li>History of malignant disease</li>
+      <li>Advise all patients who smoke to stop — worsens clinical course and ↑ risk of surgery</li>
+    </ul></div></div>
+    <div class="callout callout-info" style="margin-top:8px;"><span class="callout-icon">💡</span><div><strong>Non-pharmacological:</strong> Smoking cessation (essential — ↓ relapse rates); nutritional management (dietitian); monitor weight, nutritional status; micronutrient supplementation (Vit D, B12, iron, zinc, folate, Ca, Mg); polymeric oral nutrition supplements if needed; lower insoluble fibre may help control diarrhoea/symptoms with strictures. Multidisciplinary team essential.</div></div>
+  </section>
 
   <section class="section section-pharma" id="mild-mod">
     <div class="section-header"><div class="section-icon">💊</div><h2 class="section-title">Mild-Moderate Active Crohn: Induction of Remission</h2></div>
@@ -183,7 +200,6 @@
     </div>
   </section>
 
-  <!-- SEVERE INDUCTION -->
   <section class="section section-pharma" id="severe">
     <div class="section-header"><div class="section-icon">🚨</div><h2 class="section-title">Severe Active Crohn: Induction of Remission (Hospital)</h2></div>
     <div class="callout callout-danger" style="margin-bottom:16px;"><span class="callout-icon">🚨</span><div>Antibiotics do NOT have a role unless there are transmural complications (abscess, complex fistula). Abscesses &gt;3 cm require radiological drainage.</div></div>
@@ -263,18 +279,26 @@
               <span class="badge badge-green"><span class="badge-icon">✅</span> First conventional maintenance option for frequent relapses or corticosteroid-dependent disease — less effective than TNF-α antagonists, but well-established</span>
               <span class="badge badge-green"><span class="badge-icon">✅</span> Start at same time as corticosteroids in acute disease — full effect takes up to 3 months</span>
               <span class="badge badge-green"><span class="badge-icon">✅</span> Often used WITH a TNF-α antagonist (especially infliximab) to reduce anti-drug antibody formation</span>
-              <span class="badge badge-green"><span class="badge-icon">✅</span> Azathioprine: relatively safe in pregnancy in IBD — preferred over mercaptopurine (more experience)</span>
+              <span class="badge badge-green"><span class="badge-icon">✅</span> Relatively safe in pregnancy in IBD — preferred over mercaptopurine (more experience)</span>
               <span class="badge badge-red"><span class="badge-icon">❌</span> TPMT / NUDT15 genotype testing before starting — poor metabolisers at risk of severe myelosuppression</span>
               <span class="badge badge-red"><span class="badge-icon">❌</span> Allopurinol or febuxostat without dose adjustment → severe myelosuppression risk (see shunting protocol)</span>
-              <span class="badge badge-orange"><span class="badge-icon">⚠️</span> Azathioprine hypersensitivity: mercaptopurine may still be tolerated if the reaction was to azathioprine itself (not its metabolites) — seek specialist advice</span>
-              <span class="badge badge-orange"><span class="badge-icon">⚠️</span> Mercaptopurine: hepatotoxicity more frequent at doses &gt;2.5 mg/kg/day — monitor LFTs closely at higher doses</span>
+              <span class="badge badge-orange"><span class="badge-icon">⚠️</span> Hypersensitivity to azathioprine: mercaptopurine may still be tolerated if the reaction was to azathioprine itself (not its metabolites) — seek specialist advice</span>
               <span class="badge badge-orange"><span class="badge-icon">⚠️</span> Not for acute disease control — slow onset (up to 3 months for full effect)</span>
-              <span class="badge badge-blue"><span class="badge-icon">🔵</span> Monitor: FBC weekly for 2 months → monthly. LFTs periodically.</span>
+              <span class="badge badge-blue"><span class="badge-icon">🔵</span> Monitor: FBC weekly for 2 months → monthly. LFTs periodically. Check TPMT/NUDT15 at baseline.</span>
             </div>
           </div>
           <div class="or-separator" style="margin:8px 0;">or</div>
           <div class="drug-option-card">
             <div class="drug-option-header"><a href="#thiopurines-cd" class="drug-name-link">Mercaptopurine</a><span class="drug-dose-badge">1–1.5 mg/kg PO daily</span></div>
+            <div class="drug-indicators">
+              <span class="badge badge-green"><span class="badge-icon">✅</span> Alternative to azathioprine — same class, same indication</span>
+              <span class="badge badge-red"><span class="badge-icon">❌</span> TPMT / NUDT15 genotype testing before starting — poor metabolisers at risk of severe myelosuppression</span>
+              <span class="badge badge-red"><span class="badge-icon">❌</span> Allopurinol or febuxostat without dose adjustment → severe myelosuppression risk (see shunting protocol)</span>
+              <span class="badge badge-orange"><span class="badge-icon">⚠️</span> Hepatotoxicity more frequent at doses &gt;2.5 mg/kg/day — monitor LFTs closely at higher doses</span>
+              <span class="badge badge-orange"><span class="badge-icon">⚠️</span> Avoid in pregnancy if possible — less experience than azathioprine; excreted in breast milk</span>
+              <span class="badge badge-orange"><span class="badge-icon">⚠️</span> Not for acute disease control — slow onset (up to 3 months)</span>
+              <span class="badge badge-blue"><span class="badge-icon">🔵</span> Monitor: FBC and LFTs regularly. Round dose to nearest 25 mg half-tablet.</span>
+            </div>
           </div>
 
           <div class="callout callout-warning" style="margin-top:12px;"><span class="callout-icon">⚠️</span><div>
@@ -284,7 +308,19 @@
             → <strong>Add allopurinol 100 mg PO daily</strong>
           </div></div>
 
-          <div class="escalation-arrow switch" style="margin-top:8px;">If thiopurines not tolerated → Tioguanine 20 mg PO once or twice daily (note: cross-resistance with mercaptopurine — if mercaptopurine was ineffective, tioguanine is likely also ineffective; tioguanine metabolism is NOT dependent on xanthine oxidase → standard doses can be used alongside allopurinol or febuxostat)</div>
+          <div class="or-separator" style="margin:8px 0;">OR IF FIRST-LINE THIOPURINES ARE NOT TOLERATED</div>
+
+          <div class="drug-option-card" style="margin-top:8px;">
+            <div class="drug-option-header"><a href="#thiopurines-cd" class="drug-name-link">Tioguanine</a><span class="drug-dose-badge">20 mg PO once or twice daily</span></div>
+            <div class="drug-indicators">
+              <span class="badge badge-green"><span class="badge-icon">✅</span> Use when azathioprine and mercaptopurine are not tolerated</span>
+              <span class="badge badge-green"><span class="badge-icon">✅</span> Metabolism is NOT dependent on xanthine oxidase — standard doses can be used alongside allopurinol or febuxostat (unlike azathioprine and mercaptopurine)</span>
+              <span class="badge badge-red"><span class="badge-icon">❌</span> Cross-resistance with mercaptopurine — if mercaptopurine was ineffective, tioguanine is likely also ineffective</span>
+              <span class="badge badge-red"><span class="badge-icon">❌</span> TPMT / NUDT15 genotype testing before starting</span>
+              <span class="badge badge-orange"><span class="badge-icon">⚠️</span> Hepatotoxicity risk — presents as sinusoidal obstruction syndrome or portal hypertension; higher risk with long-term continuous use</span>
+              <span class="badge badge-blue"><span class="badge-icon">🔵</span> Monitor: FBC, renal function, and LFTs regularly</span>
+            </div>
+          </div>
           <div class="escalation-arrow if-fail" style="margin-top:8px;">If thiopurines not tolerated or ineffective → Methotrexate</div>
         </div>
       </div>
