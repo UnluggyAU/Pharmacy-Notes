@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hypothyroidism — Pharmacy Notes</title>
+  <link rel="stylesheet" href="shared.css">
+</head>
+<body>
+<nav class="sidebar">
+  <div class="sidebar-back"><a href="index.html">← All Conditions</a></div>
+  <div class="sidebar-nav">
+    <a href="#physiology">⚙️ Physiology</a>
+    <a href="#patho">🔬 Pathophysiology</a>
+    <a href="#rf">⚠️ Causes &amp; Risk Factors</a>
+    <a href="#clinical">🩺 Clinical Features</a>
+    <a href="#diagnosis">🔍 Diagnosis &amp; Blood Tests</a>
+    <a href="#when-to-treat">📋 When to Treat</a>
+    <a href="#goals">🎯 Treatment Goals &amp; Targets</a>
+    <a href="#pharma">💊 Treatment Ladder</a>
+    <a href="#special">⭐ Special Situations</a>
+    <a href="#drugs">📋 Drug Summaries</a>
+    <a href="#levothyroxine" class="sub-link">↳ Levothyroxine</a>
+    <a href="#liothyronine" class="sub-link">↳ Liothyronine</a>
+  </div>
+</nav>
+
+<main class="main-content">
+  <div class="breadcrumb"><a href="index.html">Pharmacy Notes</a> › Endocrine</div>
+  <div class="page-header">
+    <h1 class="page-title">Hypothyroidism</h1>
+    <p class="page-subtitle">Deficiency of thyroid hormone leading to a reduced metabolic rate. Primary disease is most common (~95% of adult cases). Treated with lifelong levothyroxine replacement in most cases.</p>
+  </div>
+
+  <!-- PHYSIOLOGY -->
+  <section class="section section-patho" id="physiology">
+    <div class="section-header"><div class="section-icon">⚙️</div><h2 class="section-title">Thyroid Physiology</h2></div>
+    <div class="callout callout-info" style="margin-bottom:14px;"><span class="callout-icon">💡</span><div>The hypothalamic-pituitary-thyroid (HPT) axis is the central regulatory mechanism. Understanding this axis is essential for interpreting blood tests, understanding disease, and monitoring treatment.</div></div>
+    <div class="rf-grid" style="grid-template-columns:repeat(2,1fr);overflow-wrap:break-word;word-break:break-word;">
+      <div class="rf-card" style="min-width:0;">
+        <div class="rf-card-title">🧠 HPT Axis — Regulation</div>
+        <ul class="rf-list">
+          <li><strong>Hypothalamus</strong> → releases <strong>TRH</strong> (thyrotropin-releasing hormone)</li>
+          <li>TRH → stimulates <strong>anterior pituitary</strong> → releases <strong>TSH</strong> (thyroid-stimulating hormone)</li>
+          <li>TSH → stimulates <strong>thyroid gland</strong> → synthesises and releases <strong>T3 and T4</strong></li>
+          <li>Rising T3/T4 → negative feedback on pituitary and hypothalamus → ↓ TRH and TSH</li>
+          <li>Low T3/T4 → ↑ TRH and TSH (loss of negative feedback)</li>
+        </ul>
+      </div>
+      <div class="rf-card" style="min-width:0;">
+        <div class="rf-card-title">🔬 Hormone Synthesis (Follicular Cells)</div>
+        <ul class="rf-list">
+          <li>Dietary iodine trapped from circulation, oxidised by <strong>thyroid peroxidase (TPO)</strong> and H₂O₂</li>
+          <li>Iodine attached to tyrosine residues in <strong>thyroglobulin</strong> → forms mono-iodotyrosine (MIT) and di-iodotyrosine (DIT)</li>
+          <li>Coupling via TPO: DIT + DIT → <strong>T4</strong> (thyroxine); DIT + MIT → <strong>T3</strong></li>
+          <li>Hormones stored in thyroid gland colloid; released on TSH stimulation</li>
+          <li>Thyroglobulin resorbed; amino acids and iodine recycled</li>
+        </ul>
+      </div>
+      <div class="rf-card" style="min-width:0;">
+        <div class="rf-card-title">🩸 Circulation &amp; Peripheral Conversion</div>
+        <ul class="rf-list">
+          <li>Thyroid secretes T4:T3 ratio of ~10:1 (~80–100 µg T4 and ~10 µg T3 per day)</li>
+          <li>Only 10% of circulating T3 is from direct thyroid secretion; 90% from peripheral conversion of T4 → T3 by <strong>5-deiodinase</strong> (liver, kidney, brain)</li>
+          <li><strong>T4 is a prohormone</strong> — converted peripherally to active T3 or inactive reverse T3 (rT3)</li>
+          <li>T4: 99.98% protein-bound (mainly TBG); only 0.02% free (active); half-life 6–7 days</li>
+          <li>T3: 99.8% protein-bound; 0.2% free; half-life 24–36 hours; more potent than T4; acts directly on target cell nuclear receptors</li>
+        </ul>
+      </div>
+      <div class="rf-card" style="min-width:0;">
+        <div class="rf-card-title">⚡ Thyroid Hormone Functions</div>
+        <ul class="rf-list">
+          <li>↑ Metabolic rate and oxygen consumption</li>
+          <li>↑ Protein synthesis</li>
+          <li>↑ Heart rate and cardiac output</li>
+          <li>Heat production and thermoregulation</li>
+          <li>↑ Nervous system activity, mood, and cognition</li>
+          <li>Essential for fetal CNS and skeletal development (thyroid active from week 12 gestation)</li>
+          <li>Maternal TSH and free T4 do NOT cross the placenta — iodide does</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PATHOPHYSIOLOGY -->
+  <section class="section section-patho" id="patho">
+    <div class="section-header"><div class="section-icon">🔬</div><h2 class="section-title">Pathophysiology &amp; Classification</h2></div>
+    <table class="pharm-table">
+      <thead><tr><th>Type</th><th>Mechanism</th><th>TSH</th><th>T3/T4</th><th>Common Causes</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Primary Hypothyroidism</strong></td><td>Thyroid gland fails to produce adequate T3/T4 → ↓ negative feedback → ↑ TSH</td><td class="badge-red" style="color:#dc2626;font-weight:700;">HIGH ↑</td><td style="color:#dc2626;font-weight:700;">LOW ↓</td><td>Hashimoto's (autoimmune), iodine deficiency, post-thyroidectomy, post-radioiodine, drugs (amiodarone, lithium)</td></tr>
+        <tr><td><strong>Secondary Hypothyroidism</strong></td><td>Pituitary fails to produce adequate TSH → understimulation of thyroid</td><td style="color:#dc2626;font-weight:700;">LOW ↓</td><td style="color:#dc2626;font-weight:700;">LOW ↓</td><td>Hypopituitarism, pituitary tumour compressing anterior pituitary</td></tr>
+        <tr><td><strong>Tertiary Hypothyroidism</strong></td><td>Hypothalamus fails to produce adequate TRH → ↓ TSH → ↓ thyroid stimulation</td><td style="color:#dc2626;font-weight:700;">LOW ↓</td><td style="color:#dc2626;font-weight:700;">LOW ↓</td><td>Hypothalamic disease or tumour</td></tr>
+        <tr><td><strong>Congenital Hypothyroidism</strong></td><td>Absent or dysfunctional thyroid gland from birth; most due to thyroid dysgenesis or dyshormonogenesis</td><td style="color:#dc2626;font-weight:700;">HIGH ↑</td><td style="color:#dc2626;font-weight:700;">LOW ↓</td><td>Athyreosis, thyroid ectopia, inborn errors of hormone synthesis; ~1 in 2500–3500 neonates</td></tr>
+        <tr><td><strong>Subclinical (Primary)</strong></td><td>Mild thyroid dysfunction — TSH elevated but T4 still within normal range; often asymptomatic</td><td style="color:#f59e0b;font-weight:700;">HIGH ↑</td><td style="color:#16a34a;font-weight:700;">Normal</td><td>Early Hashimoto's, mild iodine deficiency, drug-induced; ~5% of Australian population</td></tr>
+      </tbody>
+    </table>
+    <div class="callout callout-warning" style="margin-top:12px;"><span class="callout-icon">⚠️</span><div><strong>Key diagnostic rule:</strong> In primary hypothyroidism, the TSH is always elevated (↑) because the pituitary responds to low T4 by increasing TSH production. In secondary/tertiary, all three are low. Never interpret TSH alone — always consider clinical context and free T4.</div></div>
+    <div class="callout callout-danger" style="margin-top:8px;"><span class="callout-icon">⚠️</span><div><strong>Important for central hypothyroidism (secondary/tertiary):</strong> Do NOT use TSH to guide dose adjustment — it will always be low/normal regardless of T4 status. Use free T4 (target upper half of normal range) and clinical symptoms instead.</div></div>
+  </section>
+
+  <!-- CAUSES / RISK FACTORS -->
+  <section class="section section-rf" id="rf">
+    <div class="section-header"><div class="section-icon">⚠️</div><h2 class="section-title">Causes &amp; Risk Factors</h2></div>
+    <div class="rf-grid" style="grid-template-columns:repeat(auto-fit,minmax(220px,1fr))">
+      <div class="rf-card">
+        <div class="rf-card-title">🔑 Primary Causes</div>
+        <ul class="rf-list">
+          <li><strong>Autoimmune (Hashimoto's thyroiditis)</strong> — most common in iodine-replete areas (&gt;95% of adult primary cases); TPO antibodies almost always positive</li>
+          <li>Iodine deficiency — most common cause globally</li>
+          <li>Post-thyroidectomy or post-radioiodine therapy</li>
+          <li>Drug-induced (see below)</li>
+          <li>Subacute or painless thyroiditis (transient)</li>
+        </ul>
+      </div>
+      <div class="rf-card">
+        <div class="rf-card-title">💊 Drug-Induced Hypothyroidism</div>
+        <ul class="rf-list">
+          <li><strong>Amiodarone</strong> — hypothyroidism in ~10% of treated patients</li>
+          <li><strong>Lithium</strong> — hypothyroidism in ~10% of treated patients</li>
+          <li>Interferon alfa, interleukin-2 — autoimmune thyroiditis</li>
+          <li>Tyrosine kinase inhibitors (sunitinib, sorafenib)</li>
+          <li>Immune checkpoint inhibitors (ipilimumab, nivolumab, pembrolizumab, atezolizumab)</li>
+          <li>Iodine excess — can paradoxically cause hypothyroidism (Wolff-Chaikoff effect)</li>
+        </ul>
+      </div>
+      <div class="rf-card">
+        <div class="rf-card-title">👤 Patient Risk Factors</div>
+        <ul class="rf-list">
+          <li>Female sex</li>
+          <li>Age &gt;55 years</li>
+          <li>History of autoimmune disorders (type 1 diabetes, coeliac disease)</li>
+          <li>Conditions ↑ autoimmune risk (Down syndrome, Turner syndrome)</li>
+          <li>History of Graves disease (can develop hypothyroidism in remission)</li>
+          <li>Positive thyroid peroxidase antibody — ↑ risk progression of subclinical to overt disease</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLINICAL FEATURES -->
+  <section class="section section-clinical" id="clinical">
+    <div class="section-header"><div class="section-icon">🩺</div><h2 class="section-title">Clinical Features</h2></div>
+    <div class="callout callout-info" style="margin-bottom:12px;"><span class="callout-icon">💡</span><div>Symptoms are non-specific and gradual in onset — often attributed incorrectly to ageing or depression. Most clinically useful signs: myotonic (slow-relaxing) tendon reflexes, bradycardia, hair loss, cool and dry skin.</div></div>
+    <div class="rf-grid" style="grid-template-columns:repeat(auto-fit,minmax(200px,1fr))">
+      <div class="rf-card">
+        <div class="rf-card-title">⚡ Cardiovascular</div>
+        <ul class="rf-list"><li>Bradycardia</li><li>↓ Cardiac output</li><li>Cardiac enlargement</li><li>Pericardial effusion</li><li>↑ Total and LDL cholesterol</li></ul>
+      </div>
+      <div class="rf-card">
+        <div class="rf-card-title">🧠 Neuropsychiatric</div>
+        <ul class="rf-list"><li>Fatigue, lethargy, persistent drowsiness</li><li>Poor memory, ↓ cognitive function</li><li>Depression</li><li>Slow speech</li><li>Delayed deep-tendon reflexes (myotonic)</li><li>Carpal tunnel syndrome</li><li>Psychiatric disturbance</li></ul>
+      </div>
+      <div class="rf-card">
+        <div class="rf-card-title">🌡️ Metabolic &amp; GI</div>
+        <ul class="rf-list"><li>Weight gain despite ↓ appetite</li><li>Cold intolerance</li><li>Constipation</li><li>Abdominal distension, ascites</li><li>Macrocytic anaemia</li><li>↑ LDL cholesterol, hypertriglyceridaemia</li></ul>
+      </div>
+      <div class="rf-card">
+        <div class="rf-card-title">🧴 Skin, Hair &amp; Nails</div>
+        <ul class="rf-list"><li>Dry, cold, thickened, flaking skin</li><li>Reduced sweating</li><li>Yellowish complexion</li><li>Puffy face and eyes (myxoedema)</li><li>Coarse, sparse, dry hair; hair loss</li><li>Loss of outer third of eyebrows</li><li>Brittle nails</li></ul>
+      </div>
+      <div class="rf-card">
+        <div class="rf-card-title">🫁 Pulmonary &amp; Other</div>
+        <ul class="rf-list"><li>Pleural effusion, shortness of breath</li><li>Goitre (in iodine deficiency or Hashimoto's)</li><li>Periorbital oedema</li><li>Muscle weakness and pain</li><li>Reduced hearing</li><li>Irregular / heavy periods; subfertility</li><li>↓ Libido</li></ul>
+      </div>
+      <div class="rf-card">
+        <div class="rf-card-title">🚨 Myxoedema Coma</div>
+        <ul class="rf-list"><li>Rare but potentially fatal — severe untreated hypothyroidism</li><li>Precipitants: hypothermia, infection, trauma, CNS depressants (opioids, benzodiazepines, phenothiazines, beta-blockers, anaesthetics)</li><li>Features: profound hypothermia, bradycardia, hypotension, hypoventilation, confusion, coma</li><li>Medical emergency — arrange immediate transfer; see treatment section</li></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIAGNOSIS -->
+  <section class="section section-diag" id="diagnosis">
+    <div class="section-header"><div class="section-icon">🔍</div><h2 class="section-title">Diagnosis &amp; Blood Test Interpretation</h2></div>
+    <table class="pharm-table">
+      <thead><tr><th>Condition</th><th>TSH</th><th>Free T4</th><th>Free T3</th><th>TPO Antibody</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Overt primary hypothyroidism</strong></td><td style="color:#dc2626;font-weight:700;">↑ HIGH</td><td style="color:#dc2626;font-weight:700;">↓ LOW</td><td style="color:#dc2626;font-weight:700;">↓ LOW</td><td>Often positive (Hashimoto's)</td></tr>
+        <tr><td><strong>Subclinical primary hypothyroidism</strong></td><td style="color:#dc2626;font-weight:700;">↑ HIGH</td><td style="color:#16a34a;font-weight:700;">Normal</td><td style="color:#16a34a;font-weight:700;">Normal</td><td>May be positive — predicts progression</td></tr>
+        <tr><td><strong>Secondary/tertiary hypothyroidism</strong></td><td style="color:#dc2626;font-weight:700;">↓ LOW or normal</td><td style="color:#dc2626;font-weight:700;">↓ LOW</td><td style="color:#dc2626;font-weight:700;">↓ LOW</td><td>Usually negative</td></tr>
+        <tr><td><strong>Overtreatment with levothyroxine</strong></td><td style="color:#dc2626;font-weight:700;">↓ LOW / suppressed</td><td style="color:#f59e0b;font-weight:700;">↑ HIGH or normal</td><td style="color:#f59e0b;font-weight:700;">↑ or normal</td><td>—</td></tr>
+        <tr><td><strong>Euthyroid (normal)</strong></td><td style="color:#16a34a;font-weight:700;">0.4–4.0 mU/L</td><td style="color:#16a34a;font-weight:700;">Normal</td><td style="color:#16a34a;font-weight:700;">Normal</td><td>Negative</td></tr>
+      </tbody>
+    </table>
+    <div class="info-box" style="margin-top:14px;">
+      <strong>Additional investigations:</strong>
+      <ul style="padding-left:16px;margin-top:6px;">
+        <li><strong>TPO antibody</strong> — diagnostic of Hashimoto's; predicts progression from subclinical to overt hypothyroidism; guides treatment decision in subclinical disease</li>
+        <li><strong>Thyroglobulin antibody</strong> — may be elevated in Hashimoto's; used in thyroid cancer monitoring</li>
+        <li><strong>FBC</strong> — mild macrocytic anaemia common; check for pernicious anaemia (may coexist)</li>
+        <li><strong>Lipids</strong> — ↑ total cholesterol and LDL common; often improves with adequate thyroid replacement</li>
+        <li><strong>Routine testing not recommended</strong> in asymptomatic general population — test only in those with symptoms or risk factors</li>
+      </ul>
+      <div style="margin-top:10px;"><strong>⚠️ Drugs that alter diagnostic test results:</strong></div>
+      <ul style="padding-left:16px;margin-top:4px;">
+        <li><strong>Biotin (vitamin B7)</strong> — can cause false-positive results suggesting Graves disease — stop at least 2 days before testing</li>
+        <li><strong>Dopamine, glucocorticoids</strong> — lower serum TSH concentration (may mask hypothyroidism)</li>
+        <li><strong>Phenytoin, carbamazepine, furosemide, heparin, aspirin, some NSAIDs</strong> — can alter serum T4 concentration depending on analytical method</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- WHEN TO TREAT -->
+  <section class="section section-goals" id="when-to-treat">
+    <div class="section-header"><div class="section-icon">📋</div><h2 class="section-title">When to Start Treatment</h2></div>
+    <div class="treatment-ladder">
+      <div class="ladder-step">
+        <div class="ladder-step-connector"><div class="step-badge">✅</div><div class="step-line"></div></div>
+        <div class="ladder-step-content">
+          <div class="step-label">Clear indication — treat immediately</div>
+          <div class="step-title">Overt Symptomatic Primary Hypothyroidism (↑TSH + ↓T4 + symptoms)</div>
+          <div class="drug-indicators">
+            <span class="badge badge-green"><span class="badge-icon">✅</span> Start levothyroxine. TPO antibody testing NOT required — result does not change the decision to treat.</span>
+          </div>
+        </div>
+      </div>
+      <div class="ladder-step">
+        <div class="ladder-step-connector"><div class="step-badge">📋</div><div class="step-line"></div></div>
+        <div class="ladder-step-content">
+          <div class="step-label">Usually treat — confirm persistence first</div>
+          <div class="step-title">Overt Asymptomatic Primary Hypothyroidism (↑TSH + ↓T4, no symptoms)</div>
+          <div class="drug-indicators">
+            <span class="badge badge-orange"><span class="badge-icon">⚠️</span> Rare — may follow recent critical non-thyroidal illness. Repeat TFTs after 4–8 weeks (or sooner if symptoms develop) before starting treatment.</span>
+            <span class="badge badge-green"><span class="badge-icon">✅</span> If TSH remains elevated on retest → start levothyroxine.</span>
+          </div>
+        </div>
+      </div>
+      <div class="ladder-step">
+        <div class="ladder-step-connector"><div class="step-badge">📋</div><div class="step-line"></div></div>
+        <div class="ladder-step-content">
+          <div class="step-label">Reasonable to treat</div>
+          <div class="step-title">Subclinical Symptomatic Primary Hypothyroidism (↑TSH + normal T4 + symptoms)</div>
+          <div class="drug-indicators">
+            <span class="badge badge-green"><span class="badge-icon">✅</span> Trial of levothyroxine is reasonable to relieve symptoms — even if TSH is only mildly elevated.</span>
+          </div>
+        </div>
+      </div>
+      <div class="ladder-step">
+        <div class="ladder-step-connector"><div class="step-badge">📋</div><div class="step-line"></div></div>
+        <div class="ladder-step-content">
+          <div class="step-label">Treat — high risk of progression</div>
+          <div class="step-title">Subclinical Asymptomatic — TSH &gt;10 mU/L</div>
+          <div class="drug-indicators">
+            <span class="badge badge-orange"><span class="badge-icon">⚠️</span> Retest TSH after 4–8 weeks to confirm persistence. If persistent → start levothyroxine (high risk of progression to overt disease).</span>
+          </div>
+        </div>
+      </div>
+      <div class="ladder-step">
+        <div class="ladder-step-connector"><div class="step-badge">📋</div></div>
+        <div class="ladder-step-content">
+          <div class="step-label">Monitor closely — treat if progressing</div>
+          <div class="step-title">Subclinical Asymptomatic — TSH 4–10 mU/L</div>
+          <div class="drug-indicators">
+            <span class="badge badge-orange"><span class="badge-icon">⚠️</span> Retest TSH after 4–8 weeks to confirm persistence. Test TPO antibody.</span>
+            <span class="badge badge-blue"><span class="badge-icon">🔵</span> TPO positive → repeat TFTs at 3 months, then 6–12 monthly. Start treatment if progressive ↑ TSH or symptoms develop.</span>
+            <span class="badge badge-blue"><span class="badge-icon">🔵</span> TPO negative → less frequent review (e.g. annually). Less likely to progress.</span>
+            <span class="badge badge-green"><span class="badge-icon">✅</span> Young patient with significant CV risk factor (e.g. ↑ LDL) but otherwise not meeting treatment criteria → consider 3–6 month levothyroxine trial. Stop if LDL does not clearly improve.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GOALS -->
+  <section class="section section-goals" id="goals">
+    <div class="section-header"><div class="section-icon">🎯</div><h2 class="section-title">Treatment Goals &amp; TSH Targets</h2></div>
+    <div class="callout callout-info" style="margin-bottom:12px;"><span class="callout-icon">💡</span><div>Goal: achieve <strong>euthyroidism</strong> and relieve hypothyroid symptoms. <strong>TSH target varies with age</strong> — aggressive targets in the elderly increase risk of overtreatment (↑ AF, bone loss).</div></div>
+    <table class="pharm-table">
+      <thead><tr><th>Age Group</th><th>TSH Target Range</th><th>Rationale</th></tr></thead>
+      <tbody>
+        <tr><td><strong>&lt;60 years</strong></td><td style="color:#16a34a;font-weight:700;">0.5–2.5 mU/L</td><td>Approximates median TSH in normal adult population</td></tr>
+        <tr><td><strong>60–80 years</strong></td><td style="color:#f59e0b;font-weight:700;">1–5 mU/L</td><td>Normal TSH rises with age; older patients more susceptible to overtreatment effects; lower dose requirement</td></tr>
+        <tr><td><strong>&gt;80 years</strong></td><td style="color:#f59e0b;font-weight:700;">4–6 mU/L</td><td>Even higher normal range in very elderly; prioritise avoiding overtreatment (AF, falls, bone loss)</td></tr>
+        <tr><td><strong>Secondary/tertiary hypothyroidism</strong></td><td colspan="2">Do NOT use TSH to guide therapy. Target free T4 in the <strong>upper half of normal range</strong> (sample taken pre-dose)</td></tr>
+        <tr><td><strong>Overtreatment (suppressed TSH)</strong></td><td colspan="2">Long-term overtreatment → ↑ risk of atrial fibrillation and accelerated loss of bone mass</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- TREATMENT LADDER -->
+  <section class="section section-pharma" id="pharma">
+    <div class="section-header"><div class="section-icon">💊</div><h2 class="section-title">Treatment Ladder</h2></div>
+
+    <div class="treatment-ladder">
+      <div class="ladder-step">
+        <div class="ladder-step-connector"><div class="step-badge">1A</div><div class="step-line"></div></div>
+        <div class="ladder-step-content">
+          <div class="step-label">First-line — most patients with overt hypothyroidism</div>
+          <div class="step-title">Levothyroxine — Initial Full Replacement</div>
+          <div class="drug-option-card">
+            <div class="drug-option-header"><a href="#levothyroxine" class="drug-name-link">Levothyroxine</a><span class="drug-dose-badge">1.6 µg/kg orally once daily (to nearest 25 µg)</span></div>
+            <div class="drug-indicators">
+              <span class="badge badge-green"><span class="badge-icon">✅</span> Preferred approach for most overt hypothyroidism — relieves symptoms and achieves euthyroidism more quickly than partial replacement</span>
+              <span class="badge badge-green"><span class="badge-icon">✅</span> Also used following total thyroidectomy in previously euthyroid patients</span>
+              <span class="badge badge-green"><span class="badge-icon">✅</span> At extremes of body weight: use lean body weight rather than actual body weight to calculate dose</span>
+              <span class="badge badge-orange"><span class="badge-icon">⚠️</span> May require 4–6 weeks to notice full symptom improvement; T4 must be peripherally converted to T3 by 5-deiodinase</span>
+              <span class="badge badge-blue"><span class="badge-icon">🔵</span> Adjust dose every 4–8 weeks based on TSH until stable. Once stable: check at 3 months, 6 months, then annually.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ladder-step">
+        <div class="ladder-step-connector"><div class="step-badge">1B</div><div class="step-line"></div></div>
+        <div class="ladder-step-content">
+          <div class="step-label">First-line — elderly, CVD, subclinical disease, or frail patients</div>
+          <div class="step-title">Levothyroxine — Initial Partial Replacement (Low-Dose Start)</div>
+          <div class="drug-option-card">
+            <div class="drug-option-header"><a href="#levothyroxine" class="drug-name-link">Levothyroxine</a><span class="drug-dose-badge">25–50 µg orally once daily → titrate slowly every 4–8 weeks</span></div>
+            <div class="drug-indicators">
+              <span class="badge badge-green"><span class="badge-icon">✅</span> Required for: CVD (high starting dose can precipitate/exacerbate cardiac ischaemia), elderly, subclinical disease, severe or long-standing hypothyroidism</span>
+              <span class="badge badge-green"><span class="badge-icon">✅</span> Start at 12.5–25 µg in very frail patients or severe ischaemic heart disease (seek specialist advice)</span>
+              <span class="badge badge-orange"><span class="badge-icon">⚠️</span> Titrate gradually: increase by 25 µg every 6–8 weeks. If cardiac ischaemia symptoms occur → do NOT increase dose further until cardiac condition is investigated and managed</span>
+              <span class="badge badge-red"><span class="badge-icon">❌</span> Full replacement may not be achievable in severe CVD where coronary revascularisation is not possible — some degree of persisting hypothyroidism may be necessary</span>
+              <span class="badge badge-blue"><span class="badge-icon">🔵</span> Older patients typically need lower maintenance doses than younger patients</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ladder-step">
+        <div class="ladder-step-connector"><div class="step-badge">2</div><div class="step-line"></div></div>
+        <div class="ladder-step-content">
+          <div class="step-label">Dose adjustments — practical approaches</div>
+          <div class="step-title">Ongoing Dose Titration &amp; Adherence Strategies</div>
+          <div class="drug-option-card">
+            <div class="drug-option-header"><span style="font-weight:700;">Subtle dose adjustments</span></div>
+            <div class="drug-indicators">
+              <span class="badge badge-blue"><span class="badge-icon">🔵</span> Prescribe different strength tablets on different days of the week (e.g. 100 µg on weekdays, 150 µg on weekends) to achieve total weekly requirements without needing fractional tablets</span>
+              <span class="badge badge-blue"><span class="badge-icon">🔵</span> Not all brands are bioequivalent — if switching brands, recheck TFTs after 4–8 weeks and adjust dose if necessary</span>
+              <span class="badge badge-orange"><span class="badge-icon">⚠️</span> Poor adherence: if daily dosing not feasible, a SINGLE WEEKLY DOSE (total weekly dose given at once) can safely be used. Start with 11.2 µg/kg/week (= 1.6 µg/kg/day × 7) to nearest 100 µg. Recheck TFTs after 4–8 weeks of stable dosing.</span>
+            </div>
+          </div>
+          <div class="drug-option-card" style="margin-top:8px;">
+            <div class="drug-option-header"><span style="font-weight:700;">Inadequate response (TSH persistently elevated despite &gt;300 µg/day)</span></div>
+            <div class="drug-indicators">
+              <span class="badge badge-orange"><span class="badge-icon">⚠️</span> Check adherence first. Assess for factors impairing absorption: interacting drugs (see drug summary), incorrect storage, coeliac disease, food interactions</span>
+              <span class="badge badge-orange"><span class="badge-icon">⚠️</span> High TSH but normal/elevated T4 → consider intermittent poor adherence or laboratory error (heterophile antibody interference) — contact laboratory to confirm</span>
+              <span class="badge badge-blue"><span class="badge-icon">🔵</span> Persistent symptoms despite normalised TFTs → consider coexisting medical disorders (autoimmune, psychological); seek specialist advice if needed</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ladder-step">
+        <div class="ladder-step-connector"><div class="step-badge">3</div></div>
+        <div class="ladder-step-content">
+          <div class="step-label">Emergency — myxoedema coma only</div>
+          <div class="step-title">Levothyroxine IV ± Liothyronine IV</div>
+          <div class="drug-option-card">
+            <div class="drug-option-header"><a href="#levothyroxine" class="drug-name-link">Levothyroxine IV</a><span class="drug-dose-badge">300 µg loading dose by slow IV injection over 30 min, then 1.2 µg/kg IV daily</span></div>
+            <div class="drug-indicators">
+              <span class="badge badge-red"><span class="badge-icon">❌</span> MEDICAL EMERGENCY — arrange immediate ambulance transfer. Manage: airway, fluid/electrolytes, temperature, glucocorticoid deficiency (adrenal crisis).</span>
+              <span class="badge badge-green"><span class="badge-icon">✅</span> IV preferred over oral — more rapid onset; oral absorption may be impaired by intestinal pseudo-obstruction in myxoedema coma</span>
+              <span class="badge badge-orange"><span class="badge-icon">⚠️</span> If IV not available: levothyroxine 500 µg oral loading dose, then 1.6 µg/kg/day orally</span>
+              <span class="badge badge-blue"><span class="badge-icon">🔵</span> If no improvement after 24 hours → add liothyronine 20 µg IV BD (T4→T3 conversion may be impaired)</span>
+              <span class="badge badge-blue"><span class="badge-icon">🔵</span> Precipitants: hypothermia, infection, trauma, drugs (beta-blockers, opioids, benzodiazepines, phenothiazines, anaesthetics). Address all precipitating factors.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="callout callout-danger" style="margin-top:14px;"><span class="callout-icon">⚠️</span><div><strong>Critical safety — adrenal insufficiency:</strong> In hypopituitarism and adrenal insufficiency, ALWAYS treat glucocorticoid deficiency BEFORE starting levothyroxine. Thyroid hormones increase hepatic metabolism of glucocorticoids. Starting levothyroxine first can precipitate an adrenal crisis in patients with coexisting undiagnosed adrenal insufficiency.</div></div>
+    <div class="callout callout-warning" style="margin-top:8px;"><span class="callout-icon">⚠️</span><div><strong>Combination T4 + T3 therapy (levothyroxine + liothyronine):</strong> Evidence does NOT support routine use over levothyroxine monotherapy. Available T3 preparations have higher T3:T4 ratios than physiological and short half-lives, risking serum T3 fluctuations. Not recommended in pregnancy. If considered, must be managed by a specialist.</div></div>
+  </section>
+
+  <!-- SPECIAL SITUATIONS -->
+  <section class="section section-clinical" id="special">
+    <div class="section-header"><div class="section-icon">⭐</div><h2 class="section-title">Special Situations</h2></div>
+    <div class="rf-grid" style="grid-template-columns:repeat(auto-fit,minmax(240px,1fr))">
+      <div class="rf-card">
+        <div class="rf-card-title">🤰 Hypothyroidism in Pregnancy</div>
+        <ul class="rf-list">
+          <li>Untreated maternal hypothyroidism → ↑ risk of miscarriage, premature birth, low birth weight, impaired fetal neurocognitive development</li>
+          <li>Thyroid hormone production increases up to 50% during healthy pregnancy</li>
+          <li>Pre-existing on levothyroxine: usually require <strong>25–30% dose increase at 4–6 weeks gestation</strong></li>
+          <li>Pre-conception: optimise dose to achieve TSH &lt;2.5 mU/L before conception</li>
+          <li>Test TSH every 4–6 weeks in first trimester; again at ~30 weeks if stable</li>
+          <li>After delivery: reduce to pre-pregnancy dose; check TSH ~6 weeks postpartum</li>
+          <li><strong>Combination T4+T3 therapy is CONTRAINDICATED in pregnancy</strong></li>
+          <li>Levothyroxine is SAFE to use in pregnancy and breastfeeding</li>
+          <li>Maternal TSH and free T4 do NOT cross placenta — iodide does</li>
+        </ul>
+      </div>
+      <div class="rf-card">
+        <div class="rf-card-title">👶 Congenital Hypothyroidism</div>
+        <ul class="rf-list">
+          <li>~1 in 2500–3500 neonates; identified by neonatal screening</li>
+          <li>Start replacement within 24–48 hours of diagnosis; ideally before 2 weeks of age — prevents intellectual disability</li>
+          <li>Starting dose: <strong>10–15 µg/kg/day</strong> (higher weight-based dose than adults)</li>
+          <li>Target: TSH lower half of normal; T4 upper half of normal</li>
+          <li>Assess thyroid function weekly for first month; every 2–3 months for first 5 years; then every 3–6 months until fully grown</li>
+          <li>Seek paediatric endocrinologist advice for all cases</li>
+        </ul>
+      </div>
+      <div class="rf-card">
+        <div class="rf-card-title">💊 Drug-Induced Hypothyroidism</div>
+        <ul class="rf-list">
+          <li>Lithium, amiodarone — hypothyroidism in ~10% each; may be reversible if drug stopped</li>
+          <li>Immune checkpoint inhibitors — often irreversible</li>
+          <li>Decision: continue drug + add levothyroxine vs stop drug (consider harms of each)</li>
+          <li>If levothyroxine started but causative drug later stopped: retest TSH 4–8 weeks after stopping levothyroxine; restart if TSH rises</li>
+        </ul>
+      </div>
+      <div class="rf-card">
+        <div class="rf-card-title">🔪 Perioperative Management</div>
+        <ul class="rf-list">
+          <li>Hypothyroidism should be adequately treated before elective surgery</li>
+          <li>If euthyroid on therapy: levothyroxine can be safely withheld for <strong>up to 7 days</strong> (long half-life)</li>
+          <li>If oral not possible after 7 days: switch to IV levothyroxine 75% of usual oral dose daily (IV bioavailability is higher)</li>
+          <li>Restart oral as soon as patient can take fluids</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- DRUG SUMMARIES -->
+  <section class="section section-diag" id="drugs">
+    <div class="section-header"><div class="section-icon">📋</div><h2 class="section-title">Drug Summaries</h2></div>
+
+    <div class="drug-summary-card" id="levothyroxine">
+      <div class="drug-summary-header"><span class="drug-summary-name">Levothyroxine (T4)</span><span class="drug-class-badge">Thyroid Hormone Analogue — Synthetic T4</span></div>
+      <div class="drug-summary-body">
+        <div class="drug-summary-grid">
+          <div>
+            <div class="ds-section"><div class="ds-section-title">Doses (Adult)</div>
+              <ul class="dose-list">
+                <li><strong>Initial full replacement:</strong> 1.6 µg/kg PO once daily (to nearest 25 µg)<span class="dose-sub">Use lean body weight at extremes of body weight. Adjust every 4–8 weeks based on TSH.</span></li>
+                <li><strong>Initial partial replacement (elderly/CVD/subclinical):</strong> 25–50 µg PO once daily<span class="dose-sub">Start at 12.5 µg in very frail or severe IHD. Increase by 25 µg every 6–8 weeks.</span></li>
+                <li><strong>Usual maintenance range:</strong> 50–200 µg once daily</li>
+                <li><strong>Myxoedema coma (IV):</strong> 300 µg loading dose by slow IV injection over 30 min → 1.2 µg/kg IV daily; or 75% of known oral dose IV daily</li>
+                <li><strong>Perioperative (if oral not possible &gt;7 days):</strong> 75% of usual oral dose IV daily</li>
+                <li><strong>Weekly dosing (poor adherence):</strong> 11.2 µg/kg/week (= 1.6 µg/kg/day × 7) to nearest 100 µg</li>
+              </ul>
+            </div>
+            <div class="ds-section"><div class="ds-section-title">Doses (Paediatric)</div>
+              <ul class="dose-list">
+                <li><strong>Congenital hypothyroidism:</strong> 10–15 µg/kg/day (up to 15 µg/kg in athyreosis)</li>
+                <li><strong>1–12 years:</strong> 2–6 µg/kg/day, adjusted every 2–4 weeks by 25 µg</li>
+                <li>Seek paediatric endocrinologist advice. Crushed tablets given in small amount of water for infants.</li>
+              </ul>
+            </div>
+            <div class="ds-section"><div class="ds-section-title">Mechanism of Action</div><div class="ds-content">Levothyroxine is a synthetic form of T4 (thyroxine). It must be converted to active T3 by peripheral 5-deiodinase in liver, kidney, and brain before exerting its effects on target tissues. Acts on nuclear thyroid hormone receptors → regulates gene expression → ↑ metabolic rate, protein synthesis, heart function, thermogenesis, and nervous system activity. The 6–7 day half-life provides stable circulating T4 levels — makes it ideal for long-term replacement. Requires 4–8 weeks for full therapeutic effect after dose change.</div></div>
+            <div class="ds-section"><div class="ds-section-title">Indications</div><ul class="ds-list">
+              <li>Hypothyroidism (primary, secondary, tertiary, congenital)</li>
+              <li>Block-replace regimen in hyperthyroidism (combined with antithyroid drug)</li>
+              <li>TSH-suppressive therapy in thyroid cancer and euthyroid goitre</li>
+            </ul></div>
+          </div>
+          <div>
+            <div class="ds-section"><div class="ds-section-title">Precautions &amp; Contraindications</div><ul class="ds-list">
+              <li><span class="adr-red">Untreated hyperthyroidism — contraindicated</span></li>
+              <li><span class="adr-red">Adrenal insufficiency — must correct glucocorticoid deficiency BEFORE starting levothyroxine (risk of adrenal crisis)</span></li>
+              <li><span class="adr-orange">Cardiovascular disease — risk of worsening ischaemia and arrhythmias; start low, titrate slowly; do not use full replacement strategy</span></li>
+              <li><span class="adr-orange">Diabetes — may require adjustment of insulin or antidiabetic doses when starting; thyroid hormones alter glucose metabolism</span></li>
+              <li><span class="adr-orange">Elderly — require slower dose adjustment; ↑ risk of cardiovascular adverse effects; use lower TSH targets</span></li>
+              <li>Pregnancy — safe to use; dose increase of ~25–40% likely required in first trimester; check TFTs each trimester; avoid combination T4+T3 in pregnancy</li>
+              <li>Children — levothyroxine preferred; try to avoid liothyronine (developing brain preferentially uses levothyroxine)</li>
+              <li>Store correctly — some brands require refrigeration; incorrect storage impairs potency</li>
+            </ul></div>
+            <div class="ds-section"><div class="ds-section-title">Adverse Effects</div>
+              <div class="adr-section"><span class="adr-freq-label adr-common">At therapeutic dose — usually from excessive dosage</span><ul class="ds-list">
+                <li class="adr-orange">Symptoms of hyperthyroidism: tachycardia, arrhythmia, palpitations, excitability, insomnia, flushing, sweating, diarrhoea, weight loss</li>
+                <li class="adr-orange">Worsening of ischaemic heart disease symptoms — even at reduced doses in predisposed patients</li>
+                <li class="adr-orange">Decreased bone density and fractures — particularly in overtreated postmenopausal women and those with suppressed TSH</li>
+                <li class="adr-orange">Atrial fibrillation — with long-term overtreatment (suppressed TSH)</li>
+              </ul></div>
+              <div class="adr-section"><span class="adr-freq-label adr-rare">In children (excessive doses)</span><ul class="ds-list">
+                <li class="adr-red">Craniosynostosis and advancement of bone age</li>
+                <li class="adr-red">Benign intracranial hypertension (headache, vomiting, papilloedema) — rarely in first weeks of treatment</li>
+              </ul></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ds-section"><div class="ds-section-title">Drug Interactions — Detailed</div>
+          <table class="pharm-table">
+            <thead><tr><th>Drug / Group</th><th>Mechanism</th><th>Clinical Effect</th><th>Management</th></tr></thead>
+            <tbody>
+              <tr><td colspan="4" style="background:var(--bg-hover);font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:0.05em;">↓ ABSORPTION — Dose INCREASE required</td></tr>
+              <tr><td>Iron supplements (ferrous sulfate)</td><td>Binds levothyroxine in GI tract → ↓ absorption</td><td>↑ TSH; inadequate replacement</td><td>Separate by ≥4 hours; may need ↑ levothyroxine dose</td></tr>
+              <tr><td>Calcium carbonate</td><td>Binds levothyroxine → ↓ absorption</td><td>↑ TSH; inadequate replacement</td><td>Separate by ≥4 hours; may need ↑ levothyroxine dose</td></tr>
+              <tr><td>Aluminium hydroxide (antacids)</td><td>Binds levothyroxine → ↓ absorption</td><td>↑ TSH; inadequate replacement</td><td>Separate by ≥4 hours; may need ↑ levothyroxine dose</td></tr>
+              <tr><td>PPIs (e.g. omeprazole)</td><td>↑ gastric pH → ↓ levothyroxine dissolution and absorption</td><td>↑ TSH; inadequate replacement</td><td>Monitor TFTs; may need ↑ levothyroxine dose</td></tr>
+              <tr><td>Sevelamer (phosphate binder)</td><td>Binds levothyroxine → ↓ absorption</td><td>↑ TSH; inadequate replacement</td><td>Separate by ≥4 hours; monitor TFTs</td></tr>
+              <tr><td>Sucralfate</td><td>Binds levothyroxine → ↓ absorption</td><td>↑ TSH; inadequate replacement</td><td>Separate by ≥4 hours; monitor TFTs</td></tr>
+              <tr><td>Cholestyramine / colestipol (bile acid binders)</td><td>Binds T4 in gut; impairs enterohepatic reabsorption</td><td>↑ TSH; ↓ T4 levels</td><td>Separate by ≥4–6 hours; may need ↑ levothyroxine dose</td></tr>
+              <tr><td>Soy preparations</td><td>Impairs absorption</td><td>↑ TSH</td><td>Take levothyroxine consistently in relation to soy; monitor TFTs</td></tr>
+              <tr><td>Food (in general)</td><td>Food impairs levothyroxine absorption</td><td>Variable absorption if taken inconsistently</td><td>Always take in same way relative to food — best absorbed fasting (30–60 min before breakfast or at bedtime ≥3 hours after last meal)</td></tr>
+              <tr><td>Coeliac disease</td><td>Mucosal damage → ↓ absorption</td><td>↑ TSH despite apparent adequate dose</td><td>Screen and treat coeliac disease; may need higher dose</td></tr>
+              <tr><td colspan="4" style="background:var(--bg-hover);font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:0.05em;">↑ HEPATIC METABOLISM — Dose INCREASE required</td></tr>
+              <tr><td>Rifampicin</td><td>CYP enzyme induction → ↑ T4 metabolism</td><td>↓ T4 levels; ↑ TSH</td><td>Monitor TFTs; increase levothyroxine dose as needed</td></tr>
+              <tr><td>Phenytoin</td><td>CYP enzyme induction → ↑ T4 metabolism; also displaces T4 from protein binding</td><td>↓ T4 levels; also alters T4 assay results</td><td>Monitor TFTs; increase levothyroxine dose as needed</td></tr>
+              <tr><td>Carbamazepine</td><td>CYP enzyme induction → ↑ T4 metabolism</td><td>↓ T4 levels; ↑ TSH</td><td>Monitor TFTs; increase levothyroxine dose as needed</td></tr>
+              <tr><td>Barbiturates (e.g. phenobarbital)</td><td>CYP enzyme induction → ↑ T4 metabolism</td><td>↓ T4 levels; ↑ TSH</td><td>Monitor TFTs; increase levothyroxine dose as needed</td></tr>
+              <tr><td colspan="4" style="background:var(--bg-hover);font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:0.05em;">↑ THYROXINE-BINDING GLOBULIN (TBG) — Dose INCREASE required (↓ free T4 fraction)</td></tr>
+              <tr><td>Oestrogen (incl. OCP, HRT)</td><td>↑ TBG synthesis → more T4 bound → ↓ free T4</td><td>↑ TSH; symptoms of hypothyroidism</td><td>Monitor TFTs when starting/stopping oestrogen; increase levothyroxine dose (~25–30% in pregnancy)</td></tr>
+              <tr><td>Raloxifene, tamoxifen</td><td>↑ TBG → ↓ free T4</td><td>↑ TSH</td><td>Monitor TFTs; may need ↑ levothyroxine dose</td></tr>
+              <tr><td>Heroin, methadone</td><td>↑ TBG → ↓ free T4</td><td>↑ TSH</td><td>Monitor TFTs; may need ↑ levothyroxine dose</td></tr>
+              <tr><td colspan="4" style="background:var(--bg-hover);font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:0.05em;">↓ THYROXINE-BINDING GLOBULIN (TBG) — Dose DECREASE may be required (↑ free T4 fraction)</td></tr>
+              <tr><td>Androgens, anabolic steroids</td><td>↓ TBG → more T4 free → ↑ free T4</td><td>↓ TSH; risk of overtreatment</td><td>Monitor TFTs; may need to ↓ levothyroxine dose</td></tr>
+              <tr><td>Glucocorticoids (high dose)</td><td>↓ TBG → ↑ free T4; also ↓ TSH directly</td><td>↓ TSH; may mask inadequate therapy in primary hypothyroidism</td><td>Monitor TFTs; interpret TSH with caution during high-dose steroid use</td></tr>
+              <tr><td>Slow-release nicotinic acid</td><td>↓ TBG → ↑ free T4</td><td>↓ TSH; risk of overtreatment</td><td>Monitor TFTs; may need to ↓ levothyroxine dose</td></tr>
+              <tr><td colspan="4" style="background:var(--bg-hover);font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:0.05em;">OTHER CLINICALLY IMPORTANT INTERACTIONS</td></tr>
+              <tr><td>Propranolol (and other non-selective beta-blockers)</td><td>Inhibits 5-deiodinase → ↓ T4→T3 conversion → ↑ inactive rT3</td><td>May reduce efficacy of levothyroxine (less T3 produced)</td><td>May need higher levothyroxine dose; monitor TFTs and clinical response</td></tr>
+              <tr><td>Amiodarone</td><td>Complex effects: inhibits T4→T3 conversion; high iodine content; may cause hypo- or hyperthyroidism</td><td>Unpredictable; can cause either hypo- or hyperthyroidism</td><td>Monitor TFTs regularly during amiodarone therapy; dose adjustment guided by results</td></tr>
+              <tr><td>Warfarin</td><td>Thyroid hormones increase catabolism of vitamin K–dependent clotting factors</td><td>↑ INR — risk of bleeding if hypothyroidism corrected</td><td>Monitor INR closely when starting/adjusting levothyroxine; warfarin dose may need reduction</td></tr>
+              <tr><td>Insulin / antidiabetics</td><td>Thyroid hormone replacement alters glucose metabolism</td><td>May alter hypoglycaemic drug requirements</td><td>Monitor blood glucose; adjust insulin/antidiabetic doses as needed when starting levothyroxine</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="ds-section"><div class="ds-section-title">Monitoring</div><ul class="ds-list">
+          <li>Primary hypothyroidism: measure serum TSH every 4–8 weeks after dose change until stable, then 3 months, 6 months, then annually</li>
+          <li>Secondary/tertiary hypothyroidism: measure free T4 (NOT TSH) — take sample BEFORE daily dose; target upper half of normal range</li>
+          <li>Pregnancy: TFTs every 4–6 weeks in first trimester; at ~30 weeks if stable; at 6 weeks postpartum</li>
+          <li>Paediatrics: weekly TFTs for first month, then reduce frequency as TSH normalises; assess intellectual and physical development every 2–3 months for first 5 years</li>
+        </ul></div>
+        <div class="ds-section"><div class="ds-section-title">Counselling</div><ul class="ds-list">
+          <li>Take in the <strong>same way every day</strong> with respect to food — best absorbed fasting (30–60 minutes before breakfast, or at bedtime at least 3 hours after evening meal).</li>
+          <li>Do NOT take at the same time as calcium supplements, iron supplements, antacids, PPIs, or cholestyramine — separate by at least 4 hours.</li>
+          <li>Tell your doctor if you experience palpitations, excessive sweating, weight loss, tremor, or insomnia — these may indicate overtreatment.</li>
+          <li>Check how to store your specific brand — some require refrigeration; incorrect storage reduces effectiveness.</li>
+          <li>Do not switch between brands without telling your doctor — different brands may not be bioequivalent and a dose adjustment may be needed.</li>
+          <li>Treatment is usually lifelong — do not stop without medical advice.</li>
+          <li>Infants: crush tablets and dissolve in a small amount (about one teaspoon) of water or non-soy milk for administration.</li>
+        </ul></div>
+      </div>
+    </div>
+
+    <div class="drug-summary-card" id="liothyronine">
+      <div class="drug-summary-header"><span class="drug-summary-name">Liothyronine (T3)</span><span class="drug-class-badge">Thyroid Hormone Analogue — Synthetic T3 — Emergency / Specialist Use</span></div>
+      <div class="drug-summary-body">
+        <div class="drug-summary-grid">
+          <div>
+            <div class="ds-section"><div class="ds-section-title">Doses (Adult)</div>
+              <ul class="dose-list">
+                <li><strong>Myxoedema coma (IV):</strong> 20 µg slow IV injection BD (over 30 min) — add after 24 hours if no improvement on levothyroxine alone</li>
+                <li><strong>Oral (specialist use only):</strong> Usual range 20–60 µg daily in 2–3 divided doses</li>
+                <li>20–25 µg liothyronine ≈ 100 µg levothyroxine in activity</li>
+                <li>Seek endocrinologist advice for all liothyronine use</li>
+              </ul>
+            </div>
+            <div class="ds-section"><div class="ds-section-title">Mechanism of Action</div><div class="ds-content">Liothyronine is synthetic T3 — the biologically active form of thyroid hormone. Unlike levothyroxine (T4), it does NOT require peripheral conversion by 5-deiodinase. It acts directly on thyroid hormone nuclear receptors. Much shorter half-life (24–36 hours) than T4 (6–7 days) → more rapid onset but less stable serum levels. More potent than T4 at equivalent doses.</div></div>
+            <div class="ds-section"><div class="ds-section-title">Indications</div><ul class="ds-list">
+              <li>Myxoedema coma — when T4→T3 conversion may be impaired</li>
+              <li>Short-term IV use when oral levothyroxine cannot be taken</li>
+              <li>Specialist use: when rapid thyroid hormone effect required</li>
+              <li>Short-term withdrawal before thyroid cancer surveillance scanning (shortens symptomatic hypothyroid period vs levothyroxine withdrawal)</li>
+            </ul></div>
+          </div>
+          <div>
+            <div class="ds-section"><div class="ds-section-title">Precautions &amp; Contraindications</div><ul class="ds-list">
+              <li><span class="adr-red">Untreated hyperthyroidism — contraindicated</span></li>
+              <li><span class="adr-red">Adrenal insufficiency — correct glucocorticoid deficiency first</span></li>
+              <li><span class="adr-red">Cardiovascular disease — high risk of worsening ischaemia and arrhythmias; liothyronine is more potent and acts faster; use with extreme caution or avoid</span></li>
+              <li><span class="adr-red">Pregnancy — avoid liothyronine; developing brain preferentially uses T4 (levothyroxine); combination T4+T3 contraindicated in pregnancy</span></li>
+              <li><span class="adr-red">Children — try to avoid; developing brain preferentially uses levothyroxine (T4)</span></li>
+              <li><span class="adr-orange">Elderly — ↑ risk of cardiovascular adverse effects with any thyroid hormone replacement; extreme caution</span></li>
+              <li><span class="adr-orange">Diabetes — may alter insulin/antidiabetic drug requirements</span></li>
+            </ul></div>
+            <div class="ds-section"><div class="ds-section-title">Adverse Effects</div>
+              <div class="adr-section"><span class="adr-freq-label adr-common">Usually from excessive dosage</span><ul class="ds-list">
+                <li class="adr-orange">Tachycardia, palpitations, arrhythmia — more pronounced than with levothyroxine due to higher potency and shorter half-life</li>
+                <li class="adr-orange">Excitability, anxiety, insomnia, flushing, sweating, diarrhoea, weight loss (symptoms of hyperthyroidism)</li>
+                <li class="adr-orange">Serum T3 fluctuations throughout the day — especially with once-daily dosing</li>
+                <li class="adr-red">Worsening ischaemic heart disease symptoms — can occur even at reduced doses</li>
+                <li class="adr-red">Osteoporosis / accelerated bone loss with chronic overtreatment</li>
+              </ul></div>
+            </div>
+          </div>
+        </div>
+        <div class="ds-section"><div class="ds-section-title">Why Liothyronine is NOT the Standard Treatment</div><ul class="ds-list">
+          <li>Higher potency → narrower therapeutic index → more difficult to dose accurately</li>
+          <li>Short half-life (24–36 hours) → fluctuating T3 levels throughout day (risk of peaks causing hyperthyroid symptoms)</li>
+          <li>Available preparations contain much higher T3:T4 ratio than the body normally produces</li>
+          <li>Thyroid extracts and compounded preparations are not regulated for potency or consistency</li>
+          <li>Evidence does NOT support combination T3+T4 therapy over levothyroxine monotherapy for routine use</li>
+        </ul></div>
+        <div class="ds-section"><div class="ds-section-title">Counselling (if prescribed oral)</div><ul class="ds-list">
+          <li>Take in divided doses as directed — do NOT take once daily (causes T3 peaks and troughs).</li>
+          <li>Report any palpitations, sweating, tremor, or insomnia immediately.</li>
+          <li>This medicine is much more potent than levothyroxine — never increase dose without specialist advice.</li>
+        </ul></div>
+      </div>
+    </div>
+
+  </section>
+</main>
+</body>
+</html>
